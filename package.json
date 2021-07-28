@@ -1,10 +1,10 @@
 {
   "name": "uztours.com",
   "version": "1.0.0",
-  "description": "Landing page for Uztours.com",
+  "description": "The web site made only by using HTML and CSS. That is my first project. I reckon that I'll make changes in web programming world!\r This site is specialized for those who want to travel around Uzbeksitan. Hope that you will find that service what you wanted:)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/main.scss css/main.css -watch"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/farrukhrakhimoff/UzTours.com#readme",
   "devDependencies": {
+    "node": "^16.5.0",
     "node-sass": "^6.0.1"
   }
 }

@@ -1,61 +1,73 @@
+/* line 1, sass/main.scss */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-html{
-  font-size: 10px;
-}
+  box-sizing: border-box; }
+
+/* line 6, sass/main.scss */
+html {
+  font-size: 10px; }
+
+/* line 9, sass/main.scss */
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, #28b485ce, #7ed56fd8),
-    url(../images/bg-image.jpg);
+  background-image: linear-gradient(to right bottom, #28b485ce, #7ed56fd8), url(../images/bg-image.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-  position: relative;
-}
+  position: relative; }
+
+/* line 18, sass/main.scss */
 header {
-  display: block;
-}
+  display: block; }
+
+/* line 21, sass/main.scss */
 body {
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.7;
-  color: #777;
-}
+  color: #777; }
+
+/* line 28, sass/main.scss */
 .header__logo {
   width: 20rem;
-  height: 21rem;
-}
+  height: 21rem; }
+
+/* line 32, sass/main.scss */
 .header__logo-box a img {
   width: 15rem;
-  height: 16rem;
-}
+  height: 16rem; }
+
+/* line 36, sass/main.scss */
 .header__logo-box {
   position: absolute;
   top: 4rem;
-  left: 4rem;
-}
+  left: 4rem; }
+
+/* line 41, sass/main.scss */
 div {
-  display: block;
-}
+  display: block; }
+
+/* line 44, sass/main.scss */
 .header__logo-box.logo {
   height: .5rem;
-  width: .5rem;
-}
+  width: .5rem; }
+
+/* line 48, sass/main.scss */
 .header__text-box {
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
-}
+  text-align: center; }
+
+/* line 55, sass/main.scss */
 .heading-primary {
   text-transform: uppercase;
-  color: #fff;
-}
+  color: #fff; }
+
+/* line 59, sass/main.scss */
 h1 {
   display: block;
   font-size: 2em;
@@ -63,28 +75,31 @@ h1 {
   margin-block-start: 0.67em;
   margin-block-end: 0.67em;
   margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
+  margin-inline-end: 0px; }
+
+/* line 68, sass/main.scss */
 ::selection {
   color: #fff;
-  background-color: #55c57a;
-}
+  background-color: #55c57a; }
+
+/* line 72, sass/main.scss */
 .heading-primary--main {
   display: block;
   font-size: 3rem;
   font-weight: 400;
   letter-spacing: 3.5rem;
-  animation: moveInRight 1.4s ease-in;
-}
+  animation: moveInRight 1.4s ease-in; }
+
+/* line 79, sass/main.scss */
 .heading-primary--sub {
   display: block;
   font-size: 6rem;
   font-weight: 400;
   letter-spacing: 1.76rem;
   animation: moveInLeft 1.4s ease-out;
-  margin-bottom: 6rem;
-}
+  margin-bottom: 6rem; }
 
+/* line 88, sass/main.scss */
 .btn,
 .btn:link,
 .btn:visited {
@@ -96,37 +111,40 @@ h1 {
   transition: all 0.2s;
   position: relative;
   border: none;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
+/* line 102, sass/main.scss */
 .btn--animated {
   animation: moveinbot 1s ease-out 0.75s;
-  animation-fill-mode: backwards;
-}
+  animation-fill-mode: backwards; }
 
+/* line 107, sass/main.scss */
 .btn--white {
   color: #777;
-  background-color: #fff;
-}
+  background-color: #fff; }
+
+/* line 111, sass/main.scss */
 .btn--white::after {
-  background-color: #fff;
-}
+  background-color: #fff; }
+
+/* line 114, sass/main.scss */
 .btn:hover {
   transform: translateY(-0.3rem);
-  box-shadow: rgba(0, 0, 0, 0.2) 0 1rem 2rem;
-}
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1rem 2rem; }
+
+/* line 118, sass/main.scss */
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
-}
+  opacity: 0; }
 
+/* line 123, sass/main.scss */
 .btn:active,
 .btn:focus {
   outline: none;
   transform: translateY(-0.1rem);
-  box-shadow: rgba(0, 0, 0, 0.2) 0 0.5rem 1rem;
-}
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0.5rem 1rem; }
 
+/* line 130, sass/main.scss */
 .btn::after {
   content: "";
   height: 100%;
@@ -137,35 +155,25 @@ h1 {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all 0.4s;
-}
+  transition: all 0.4s; }
 
 /*Animations*/
-
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(-1rem) rotateX(100deg);
-  }
+    transform: translateX(-1rem) rotateX(100deg); }
   80% {
-    transform: translate(1.5rem);
-  }
+    transform: translate(1.5rem); }
   100% {
     opacity: 1;
-    transform: translate(0);
-  }
-}
+    transform: translate(0); } }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-10rem);
-  }
+    transform: translateX(-10rem); }
   80% {
-    transform: translateX(1rem);
-  }
+    transform: translateX(1rem); }
   100% {
     opacity: 1;
-    transform: translateX(0);
-
-  }
-}
+    transform: translateX(0); } }
