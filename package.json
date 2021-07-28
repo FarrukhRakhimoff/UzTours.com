@@ -1,0 +1,25 @@
+{
+  "name": "uztours.com",
+  "version": "1.0.0",
+  "description": "Landing page for Uztours.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farrukhrakhimoff/UzTours.com.git"
+  },
+  "keywords": [
+    "150996"
+  ],
+  "author": "farrukh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/farrukhrakhimoff/UzTours.com/issues"
+  },
+  "homepage": "https://github.com/farrukhrakhimoff/UzTours.com#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
