@@ -1,0 +1,17 @@
+.heading-primary{
+  &--main {
+    display: block;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation: moveInRight 1.4s ease-in;
+  }
+  &--sub {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 1.76rem;
+    animation: moveInLeft 1.4s ease-out;
+    margin-bottom: 6rem;
+  }
+}
