@@ -55,55 +55,49 @@ body {
   margin-bottom: 6rem; }
 
 /* line 1, sass/layouts/_header.scss */
-.header {
+header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../images/bg-image.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   position: relative; }
+  /* line 9, sass/layouts/_header.scss */
+  header__logo-box.logo {
+    height: .5rem;
+    width: .5rem; }
+  /* line 13, sass/layouts/_header.scss */
+  header__logo {
+    width: 20rem;
+    height: 21rem; }
+  /* line 17, sass/layouts/_header.scss */
+  header__logo-box a img {
+    width: 15rem;
+    height: 16rem; }
+  /* line 21, sass/layouts/_header.scss */
+  header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  /* line 27, sass/layouts/_header.scss */
+  header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  /* line 34, sass/layouts/_header.scss */
+  header-primary {
+    text-transform: uppercase;
+    color: #fff; }
 
-/* line 10, sass/layouts/_header.scss */
+/* line 40, sass/layouts/_header.scss */
 header {
   display: block; }
 
-/* line 14, sass/layouts/_header.scss */
-.header__logo {
-  width: 20rem;
-  height: 21rem; }
-
-/* line 18, sass/layouts/_header.scss */
-.header__logo-box a img {
-  width: 15rem;
-  height: 16rem; }
-
-/* line 22, sass/layouts/_header.scss */
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem; }
-
-/* line 27, sass/layouts/_header.scss */
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
-
-/* line 34, sass/layouts/_header.scss */
-.heading-primary {
-  text-transform: uppercase;
-  color: #fff; }
-
-/* line 38, sass/layouts/_header.scss */
+/* line 43, sass/layouts/_header.scss */
 div {
   display: block; }
-
-/* line 41, sass/layouts/_header.scss */
-.header__logo-box.logo {
-  height: .5rem;
-  width: .5rem; }
 
 /* line 46, sass/layouts/_header.scss */
 h1 {
@@ -115,15 +109,13 @@ h1 {
   margin-inline-start: 0px;
   margin-inline-end: 0px; }
 
-/* line 55, sass/layouts/_header.scss */
+/* line 56, sass/layouts/_header.scss */
 ::selection {
   color: #fff;
   background-color: #55c57a; }
 
-/* line 1, sass/components/_button.scss */
-.btn,
-.btn:link,
-.btn:visited {
+/* line 2, sass/components/_button.scss */
+.btn:link, .btn:visited {
   text-decoration: none;
   display: inline-block;
   padding: 1.5rem 4rem;
@@ -159,8 +151,7 @@ h1 {
   opacity: 0; }
 
 /* line 36, sass/components/_button.scss */
-.btn:active,
-.btn:focus {
+.btn:active, .btn:focus {
   outline: none;
   transform: translateY(-0.1rem);
   box-shadow: rgba(0, 0, 0, 0.2) 0 0.5rem 1rem; }
@@ -177,3 +168,9 @@ h1 {
   left: 0;
   z-index: -1;
   transition: all 0.4s; }
+
+/* line 1, sass/layouts/_grid.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
