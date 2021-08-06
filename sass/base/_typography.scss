@@ -1,4 +1,5 @@
 .heading-primary{
+  color: $color-white; 
   &--main {
     display: block;
     font-size: 3rem;
@@ -28,4 +29,16 @@
   &:hover{
     transform: skewX(15deg) skewY(2deg) scale(1.1);
   }
+  margin-bottom: $margin-bottom-medium;  
+}
+.heading-tertiary{
+font-size: 2rem;
+font-weight: 700;
+text-transform: uppercase;
+}
+.paragraph{
+  font-size: 2rem;
+  &:not(:last-child){
+    margin-bottom: 3rem;
+  }   
 }
