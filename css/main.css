@@ -84,6 +84,32 @@ body {
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
+/* line 45, sass/base/_typography.scss */
+.btn-text {
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 1px solid #55c57a;
+  padding: 3px;
+  color: #55c57a;
+  transition: all .2s; }
+  /* line 53, sass/base/_typography.scss */
+  .btn-text:link {
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 1px solid #55c57a;
+    padding: 3px;
+    color: #28b485;
+    transition: all .2s; }
+  /* line 62, sass/base/_typography.scss */
+  .btn-text:active {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
+  /* line 65, sass/base/_typography.scss */
+  .btn-text:hover {
+    background-color: #28b485;
+    color: #fff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px); }
+
 /* line 1, sass/base/_utility.scss */
 .u-margin-bottom-small {
   margin-bottom: 2rem; }
@@ -215,6 +241,14 @@ h1 {
   z-index: -1;
   transition: all 0.4s; }
 
+/*Section btn-text*/
+/* line 59, sass/components/_button.scss */
+.col-1-of-1.btn-text, .col-1-of-1 .btn-text:link {
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 1px solid #55c57a;
+  color: green; }
+
 /* line 1, sass/layouts/_grid.scss */
 * {
   margin: 0;
@@ -263,3 +297,34 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -25vh; }
+
+/* line 1, sass/components/_composition.scss */
+.composition {
+  position: relative; }
+  /* line 3, sass/components/_composition.scss */
+  .composition__photo {
+    width: 55%;
+    border-radius: 5px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    position: absolute;
+    z-index: 10;
+    outline-offset: 1rem;
+    transition: all .2s; }
+    /* line 11, sass/components/_composition.scss */
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    /* line 15, sass/components/_composition.scss */
+    .composition__photo--p2 {
+      right: 0;
+      top: 2rem; }
+    /* line 19, sass/components/_composition.scss */
+    .composition__photo--p3 {
+      left: 20%;
+      top: 10rem; }
+    /* line 24, sass/components/_composition.scss */
+    .composition__photo:hover {
+      z-index: 20;
+      transform: scale(1.1);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.4);
+      outline: 1rem solid #55c57a; }

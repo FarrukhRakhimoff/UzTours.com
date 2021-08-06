@@ -53,3 +53,13 @@
     transition: all 0.4s;
   }
 }
+/*Section btn-text*/
+.col-1-of-1{
+
+  &.btn-text,.btn-text:link{
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 1px solid $color-primary;
+    color: green;
+  }
+}
