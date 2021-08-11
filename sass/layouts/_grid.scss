@@ -42,6 +42,16 @@ body {
     &:not(:last-child) {
       margin-right: $horizontal-gutter;
     }
+    & .col-1-of-4{
+      color: $color-grey-dark;
+      width: calc((100% - 3*#{$horizontal-gutter}) / 4);
+      background-color: $color-grey-light-1;
+      float: left;
+  
+      // &:not(:last-child) {
+      //   margin-right: $horizontal-gutter;
+      // } 
+    }
   }
 }
 // @mixin clearfix {
