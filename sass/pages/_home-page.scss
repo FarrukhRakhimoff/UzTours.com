@@ -3,15 +3,18 @@
     padding: 25rem 0;
     margin-top: -25vh;
     margin: 0 auto;
-    margin-bottom: 30vh;
 }      
 .section-features{
     padding: 25rem 0;
-    height: 95vh;
+    height: 150vh;
     background-image: linear-gradient(to right bottom,
     rgba($color-primary-light, 0.8),
     rgba($color-primary-dark, 0.8)),
     url(../images/photo_2.jpg);
     background-size: cover;   
     background-position: center;
-}
+    transform: skewY(-7deg);
+    margin-top: -12rem;
+    & > * {transform: skewY(7deg);} // direct child ga amal bajariladi. Hamma content shu divni(section-features ni hammasi 7 deg qayiladi)
+}   
+    
