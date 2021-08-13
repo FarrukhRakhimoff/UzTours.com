@@ -15,6 +15,33 @@
     background-position: center;
     transform: skewY(-7deg);
     margin-top: -12rem;
+
     & > * {transform: skewY(7deg);} // direct child ga amal bajariladi. Hamma content shu divni(section-features ni hammasi 7 deg qayiladi)
-}   
+}
+
+.section-tours{
+ margin-top: 2rem;
+}
+.card{
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    &__side{
+        height: 50rem;
+        transition: all .8s;
+        color: $color-white;
+        font-size: 2rem;
+        &--front{
+            background-color: orangered;
+        }
+        &--back{
+            background-color: green;
+            transform: rotateY(180deg);
+        }
+
+    }
+
+    &:hover &__side{
+        transform: rotateY(180deg);
+    }
+}
     
