@@ -325,43 +325,54 @@ h1 {
   margin-top: -25vh;
   margin: 0 auto; }
 
-/* line 7, sass/pages/_home.scss */
+/* line 8, sass/pages/_home.scss */
 .section-features {
   padding: 25rem 0;
-  height: 150vh;
+  height: 110vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../images/photo_2.jpg);
   background-size: cover;
   background-position: center;
-  transform: skewY(-7deg);
-  margin-top: -12rem; }
-  /* line 19, sass/pages/_home.scss */
-  .section-features > * {
-    transform: skewY(7deg); }
+  margin-top: -13rem;
+  clip-path: polygon(0 13%, 100% 0%, 100% 83%, 0 100%); }
 
 /* line 22, sass/pages/_home.scss */
 .section-tours {
-  margin-top: 2rem; }
+  margin-top: 5rem; }
 
 /* line 25, sass/pages/_home.scss */
 .card {
   perspective: 150rem;
-  -moz-perspective: 150rem; }
-  /* line 28, sass/pages/_home.scss */
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 53rem; }
+  /* line 31, sass/pages/_home.scss */
   .card__side {
-    height: 50rem;
+    height: 53rem;
     transition: all .8s;
     color: #fff;
-    font-size: 2rem; }
-    /* line 33, sass/pages/_home.scss */
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    /* line 42, sass/pages/_home.scss */
     .card__side--front {
-      background-color: orangered; }
-    /* line 36, sass/pages/_home.scss */
+      background-color: #ff7730; }
+    /* line 45, sass/pages/_home.scss */
     .card__side--back {
-      background-color: green;
-      transform: rotateY(180deg); }
-  /* line 43, sass/pages/_home.scss */
-  .card:hover .card__side {
-    transform: rotateY(180deg); }
+      transform: rotateY(180deg);
+      background-color: green; }
+      /* line 48, sass/pages/_home.scss */
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+  /* line 55, sass/pages/_home.scss */
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  /* line 58, sass/pages/_home.scss */
+  .card:hover .card_-side--back {
+    transform: rotateY(0); }
 
 /* line 1, sass/components/_composition.scss */
 .composition {
