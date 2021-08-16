@@ -162,88 +162,6 @@ h1 {
   color: #fff;
   background-color: #55c57a; }
 
-/* line 2, sass/components/_button.scss */
-.btn:link, .btn:visited {
-  text-decoration: none;
-  display: inline-block;
-  padding: 1.5rem 4rem;
-  border-radius: 10rem;
-  text-transform: uppercase;
-  transition: all 0.2s;
-  position: relative;
-  border: none;
-  cursor: pointer; }
-
-/* line 15, sass/components/_button.scss */
-.btn--animated {
-  animation: moveinbot 1s ease-out 0.75s;
-  animation-fill-mode: backwards; }
-
-/* line 20, sass/components/_button.scss */
-.btn--white {
-  color: #777;
-  background-color: #fff; }
-
-/* line 24, sass/components/_button.scss */
-.btn--white::after {
-  background-color: #fff; }
-
-/* line 27, sass/components/_button.scss */
-.btn:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: rgba(0, 0, 0, 0.2) 0 1rem 2rem; }
-
-/* line 31, sass/components/_button.scss */
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0; }
-
-/* line 36, sass/components/_button.scss */
-.btn:active, .btn:focus {
-  outline: none;
-  transform: translateY(-0.1rem);
-  box-shadow: rgba(0, 0, 0, 0.2) 0 0.5rem 1rem; }
-
-/* line 43, sass/components/_button.scss */
-.btn::after {
-  content: "";
-  height: 100%;
-  width: 100%;
-  border-radius: 10rem;
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.4s; }
-
-/*Section btn-text*/
-/* line 59, sass/components/_button.scss */
-.btn-text {
-  text-decoration: none;
-  display: inline-block;
-  border-bottom: 1px solid #55c57a;
-  padding: 3px;
-  color: #55c57a;
-  transition: all .2s; }
-  /* line 66, sass/components/_button.scss */
-  .btn-text:link {
-    text-decoration: none;
-    display: inline-block;
-    border-bottom: 1px solid #55c57a;
-    padding: 3px;
-    color: #fff;
-    transition: all .2s; }
-  /* line 74, sass/components/_button.scss */
-  .btn-text:active {
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
-  /* line 77, sass/components/_button.scss */
-  .btn-text:hover {
-    background-color: #55c57a;
-    color: #fff;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-    transform: translateY(-2px); }
-
 /*.row {
     width: $grid-width;
     margin: 0 auto;
@@ -339,40 +257,87 @@ h1 {
 .section-tours {
   margin-top: 5rem; }
 
-/* line 25, sass/pages/_home.scss */
-.card {
-  perspective: 150rem;
-  -moz-perspective: 150rem;
+/* line 2, sass/components/_button.scss */
+.btn:link, .btn:visited {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1.5rem 4rem;
+  border-radius: 10rem;
+  text-transform: uppercase;
+  transition: all 0.2s;
   position: relative;
-  height: 53rem; }
-  /* line 31, sass/pages/_home.scss */
-  .card__side {
-    height: 53rem;
-    transition: all .8s;
+  border: none;
+  cursor: pointer; }
+
+/* line 15, sass/components/_button.scss */
+.btn--animated {
+  animation: moveinbot 1s ease-out 0.75s;
+  animation-fill-mode: backwards; }
+
+/* line 20, sass/components/_button.scss */
+.btn--white {
+  color: #777;
+  background-color: #fff; }
+
+/* line 24, sass/components/_button.scss */
+.btn--white::after {
+  background-color: #fff; }
+
+/* line 27, sass/components/_button.scss */
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1rem 2rem; }
+
+/* line 31, sass/components/_button.scss */
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0; }
+
+/* line 36, sass/components/_button.scss */
+.btn:active, .btn:focus {
+  outline: none;
+  transform: translateY(-0.1rem);
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0.5rem 1rem; }
+
+/* line 43, sass/components/_button.scss */
+.btn::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s; }
+
+/*Section btn-text*/
+/* line 59, sass/components/_button.scss */
+.btn-text {
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 1px solid #55c57a;
+  padding: 3px;
+  color: #55c57a;
+  transition: all .2s; }
+  /* line 66, sass/components/_button.scss */
+  .btn-text:link {
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 1px solid #55c57a;
+    padding: 3px;
     color: #fff;
-    font-size: 2rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    backface-visibility: hidden;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
-    /* line 42, sass/pages/_home.scss */
-    .card__side--front {
-      background-color: #ff7730; }
-    /* line 45, sass/pages/_home.scss */
-    .card__side--back {
-      transform: rotateY(180deg);
-      background-color: green; }
-      /* line 48, sass/pages/_home.scss */
-      .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
-  /* line 55, sass/pages/_home.scss */
-  .card:hover .card__side--front {
-    transform: rotateY(-180deg); }
-  /* line 58, sass/pages/_home.scss */
-  .card:hover .card_-side--back {
-    transform: rotateY(0); }
+    transition: all .2s; }
+  /* line 74, sass/components/_button.scss */
+  .btn-text:active {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
+  /* line 77, sass/components/_button.scss */
+  .btn-text:hover {
+    background-color: #55c57a;
+    color: #fff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px); }
 
 /* line 1, sass/components/_composition.scss */
 .composition {
@@ -430,3 +395,38 @@ h1 {
     -webkit-background-clip: text;
     color: transparent;
     margin-bottom: 0.5rem; }
+
+/* line 2, sass/components/_card.scss */
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 53rem; }
+  /* line 8, sass/components/_card.scss */
+  .card__side {
+    height: 53rem;
+    transition: all .8s;
+    color: #000;
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: visible;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5); }
+    /* line 19, sass/components/_card.scss */
+    .card__side--front {
+      background-color: #fff; }
+    /* line 22, sass/components/_card.scss */
+    .card__side--back {
+      transform: rotateY(180deg);
+      background-color: blue; }
+      /* line 26, sass/components/_card.scss */
+      .card__side--back_1 {
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+  /* line 33, sass/components/_card.scss */
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  /* line 36, sass/components/_card.scss */
+  .card:hover .card_-side--back-1 {
+    transform: rotateY(0); }
