@@ -412,21 +412,22 @@ h1 {
     top: 0;
     left: 0;
     width: 100%;
-    backface-visibility: visible;
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5); }
-    /* line 19, sass/components/_card.scss */
+    /* line 20, sass/components/_card.scss */
     .card__side--front {
       background-color: #fff; }
-    /* line 22, sass/components/_card.scss */
+    /* line 23, sass/components/_card.scss */
     .card__side--back {
-      transform: rotateY(180deg);
-      background-color: blue; }
-      /* line 26, sass/components/_card.scss */
+      transform: rotateY(180deg); }
+      /* line 25, sass/components/_card.scss */
       .card__side--back_1 {
-        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
-  /* line 33, sass/components/_card.scss */
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+        background-color: blue; }
+  /* line 32, sass/components/_card.scss */
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
-  /* line 36, sass/components/_card.scss */
+  /* line 35, sass/components/_card.scss */
   .card:hover .card_-side--back-1 {
     transform: rotateY(0); }

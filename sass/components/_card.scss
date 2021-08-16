@@ -14,25 +14,24 @@
         top: 0;
         left: 0;
         width: 100%;
-        backface-visibility: visible;
+        backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .5);
         &--front{
             background-color: $color-white;
         }
         &--back{
-            transform: rotateY(180deg);
-            background-color: blue;
-            
+            transform: rotateY(180deg);             
             &_1{
                 background-image: linear-gradient(to right bottom, $color-secondary-light,$color-secondary-dark);
+                background-color: blue;
             }
         }
     }
-    
-    
+
     &:hover &__side--front{
         transform: rotateY(-180deg);
-    }
+    } 
     &:hover &_-side--back-1{
         transform: rotateY(0);
     }       
