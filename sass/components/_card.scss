@@ -2,11 +2,11 @@
 .cards{          
     perspective: 150rem;
     -moz-perspective: 150rem;           
-    height: 53rem;       
+    height: 60rem;       
     position: relative;
  
     &__side{
-        height: 53rem;
+        height: 60rem;
         transition: all .8s ease; 
         font-size: 2rem;
         width: 100%;
@@ -23,14 +23,14 @@
         &--back{
             transform:rotateY(180deg);      
             &-1{
-                background-image:linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+                background-image:linear-gradient(to right bottom, $color-secondary-dark, $color-secondary-light);
             }
-            // &-2{
-            //  background-image:linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
-            // }
-            // &-3{
-            //  background-image:linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
-            // }
+            &-2{
+             background-image:linear-gradient(to right bottom, $color-primary-dark, $color-primary-light);
+            }
+            &-3{
+             background-image:linear-gradient(to right bottom, $color-tertiary-dark, $color-tertiary-light);
+            }
          }
 
 
@@ -58,10 +58,10 @@
             background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../../images/chorvoq.jpg);
         }
         &--3{
-            background-image: linear-gradient(to right bottom, $color-blue-light, $color-blue-dark), url(../../images/snow.jpg);
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../../images/snow.jpg);
         }               
     }
-        &__heading{
+    &__heading{
         font-size: 2.9rem;
         font-weight: 300;
         text-transform: uppercase;
@@ -76,15 +76,15 @@
         padding: 1rem 1.5rem;
         -webkit-box-decoration-break: clone; //to make the border-paddings to look linked
         &--1{
-            background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, 0.85));
+            background-image: linear-gradient(to right bottom, rgba($color-secondary-dark, .85), rgba($color-secondary-light, 0.85));
         }
         &--2{
-            background-image: linear-gradient(to right bottom, rgba($color-primary-light, .85), rgba($color-primary-dark, 0.85));
+            background-image: linear-gradient(to right bottom, rgba($color-primary-dark, .85), rgba($color-primary-light, 0.85));
         }
         &--3{
-            background-image: linear-gradient(to right bottom, rgba($color-blue-light, .85), rgba($color-blue-dark, 0.85));
+            background-image: linear-gradient(to right bottom, rgba($color-tertiary-dark, .85), rgba($color-tertiary-light, 0.85));
         }
-    }
+    }           
     &__details{
         margin-top: 3rem;
         ul{
@@ -100,6 +100,28 @@
                 }
             }
         }
+    }
+
+    &__cta{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+    }
+
+    &__price-box{
+        text-align: center;
+        color: $color-white;
+        margin-bottom: 8rem;
+    }
+    &__price-only{
+    font-size: 2rem;
+    text-transform: uppercase;
+    }
+    &__price-value{
+        font-size: 6rem;
+        font-weight: 100;
     }
 }                                      
                     

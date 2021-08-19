@@ -400,11 +400,11 @@ h1 {
 .cards {
   perspective: 150rem;
   -moz-perspective: 150rem;
-  height: 53rem;
+  height: 60rem;
   position: relative; }
   /* line 8, sass/components/_card.scss */
   .cards__side {
-    height: 53rem;
+    height: 60rem;
     transition: all .8s ease;
     font-size: 2rem;
     width: 100%;
@@ -423,7 +423,13 @@ h1 {
       transform: rotateY(180deg); }
       /* line 25, sass/components/_card.scss */
       .cards__side--back-1 {
-        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+        background-image: linear-gradient(to right bottom, #ff7730, #ffb900); }
+      /* line 28, sass/components/_card.scss */
+      .cards__side--back-2 {
+        background-image: linear-gradient(to right bottom, #28b485, #7ed56f); }
+      /* line 31, sass/components/_card.scss */
+      .cards__side--back-3 {
+        background-image: linear-gradient(to right bottom, #0649B8, #5FA8D7); }
   /* line 39, sass/components/_card.scss */
   .cards:hover .cards__side--front {
     transform: rotateY(-180deg); }
@@ -446,7 +452,7 @@ h1 {
       background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../../images/chorvoq.jpg); }
     /* line 60, sass/components/_card.scss */
     .cards__picture--3 {
-      background-image: linear-gradient(to right bottom, navy, #4c709e), url(../../images/snow.jpg); }
+      background-image: linear-gradient(to right bottom, #5FA8D7, #0649B8), url(../../images/snow.jpg); }
   /* line 64, sass/components/_card.scss */
   .cards__heading {
     font-size: 2.9rem;
@@ -464,13 +470,13 @@ h1 {
     -webkit-box-decoration-break: clone; }
     /* line 78, sass/components/_card.scss */
     .cards__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(255, 119, 48, 0.85), rgba(255, 185, 0, 0.85)); }
     /* line 81, sass/components/_card.scss */
     .cards__heading-span--2 {
-      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(40, 180, 133, 0.85), rgba(126, 213, 111, 0.85)); }
     /* line 84, sass/components/_card.scss */
     .cards__heading-span--3 {
-      background-image: linear-gradient(to right bottom, rgba(0, 0, 128, 0.85), rgba(76, 112, 158, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(6, 73, 184, 0.85), rgba(95, 168, 215, 0.85)); }
   /* line 88, sass/components/_card.scss */
   .cards__details {
     margin-top: 3rem; }
@@ -487,3 +493,23 @@ h1 {
         /* line 98, sass/components/_card.scss */
         .cards__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
+  /* line 105, sass/components/_card.scss */
+  .cards__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; }
+  /* line 113, sass/components/_card.scss */
+  .cards__price-box {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 8rem; }
+  /* line 118, sass/components/_card.scss */
+  .cards__price-only {
+    font-size: 2rem;
+    text-transform: uppercase; }
+  /* line 122, sass/components/_card.scss */
+  .cards__price-value {
+    font-size: 6rem;
+    font-weight: 100; }
