@@ -62,7 +62,7 @@
         }               
     }
         &__heading{
-        font-size: 2.8rem;
+        font-size: 2.9rem;
         font-weight: 300;
         text-transform: uppercase;
         text-align: right;
@@ -77,6 +77,12 @@
         -webkit-box-decoration-break: clone; //to make the border-paddings to look linked
         &--1{
             background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, 0.85));
+        }
+        &--2{
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light, .85), rgba($color-primary-dark, 0.85));
+        }
+        &--3{
+            background-image: linear-gradient(to right bottom, rgba($color-blue-light, .85), rgba($color-blue-dark, 0.85));
         }
     }
     &__details{
