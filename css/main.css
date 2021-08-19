@@ -446,13 +446,13 @@ h1 {
     -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 85%, 0 100%); }
     /* line 54, sass/components/_card.scss */
     .cards__picture--1 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../../images/ark-fortress-bukhara.jpg); }
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../../images/ark.jpg); }
     /* line 57, sass/components/_card.scss */
     .cards__picture--2 {
-      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../../images/chorvoq.jpg); }
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../../images/river.jpg); }
     /* line 60, sass/components/_card.scss */
     .cards__picture--3 {
-      background-image: linear-gradient(to right bottom, #5FA8D7, #0649B8), url(../../images/snow.jpg); }
+      background-image: linear-gradient(to right bottom, #5FA8D7, #0649B8), url(../../images/snowed.jpg); }
   /* line 64, sass/components/_card.scss */
   .cards__heading {
     font-size: 2.9rem;
