@@ -257,6 +257,11 @@ h1 {
 .section-tours {
   margin-top: 5rem; }
 
+/* line 24, sass/pages/_home.scss */
+.section-stories {
+  padding: 15rem 0;
+  background-color: #f7f7f7; }
+
 /* line 2, sass/components/_button.scss */
 .btn:link, .btn:visited {
   text-decoration: none;
@@ -284,22 +289,31 @@ h1 {
   background-color: #fff; }
 
 /* line 27, sass/components/_button.scss */
+.btn--green {
+  color: #fff;
+  background-color: #28b485; }
+
+/* line 31, sass/components/_button.scss */
+.btn--green::after {
+  background-color: #28b485; }
+
+/* line 34, sass/components/_button.scss */
 .btn:hover {
   transform: translateY(-0.3rem);
   box-shadow: rgba(0, 0, 0, 0.2) 0 1rem 2rem; }
 
-/* line 31, sass/components/_button.scss */
+/* line 38, sass/components/_button.scss */
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0; }
 
-/* line 36, sass/components/_button.scss */
+/* line 43, sass/components/_button.scss */
 .btn:active, .btn:focus {
   outline: none;
   transform: translateY(-0.1rem);
   box-shadow: rgba(0, 0, 0, 0.2) 0 0.5rem 1rem; }
 
-/* line 43, sass/components/_button.scss */
+/* line 50, sass/components/_button.scss */
 .btn::after {
   content: "";
   height: 100%;
@@ -313,7 +327,7 @@ h1 {
   transition: all 0.4s; }
 
 /*Section btn-text*/
-/* line 59, sass/components/_button.scss */
+/* line 66, sass/components/_button.scss */
 .btn-text {
   text-decoration: none;
   display: inline-block;
@@ -321,7 +335,7 @@ h1 {
   padding: 3px;
   color: #55c57a;
   transition: all .2s; }
-  /* line 66, sass/components/_button.scss */
+  /* line 73, sass/components/_button.scss */
   .btn-text:link {
     text-decoration: none;
     display: inline-block;
@@ -329,10 +343,10 @@ h1 {
     padding: 3px;
     color: #fff;
     transition: all .2s; }
-  /* line 74, sass/components/_button.scss */
+  /* line 81, sass/components/_button.scss */
   .btn-text:active {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
-  /* line 77, sass/components/_button.scss */
+  /* line 84, sass/components/_button.scss */
   .btn-text:hover {
     background-color: #55c57a;
     color: #fff;
@@ -513,3 +527,46 @@ h1 {
   .cards__price-value {
     font-size: 6rem;
     font-weight: 100; }
+
+/* line 1, sass/components/_story.scss */
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 1rem 3rem 6rem rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 6rem;
+  font-size: 1.6rem;
+  transform: skewX(-12deg); }
+  /* line 11, sass/components/_story.scss */
+  .story > * {
+    transform: skewX(12deg); }
+  /* line 14, sass/components/_story.scss */
+  .story__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    background-color: yellow;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem);
+    position: relative; }
+  /* line 25, sass/components/_story.scss */
+  .story__img {
+    height: 100%; }
+  /* line 31, sass/components/_story.scss */
+  .story__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 120%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    transition: all .2s; }
+  /* line 43, sass/components/_story.scss */
+  .story:hover .story__caption {
+    transform: translate(-50%, -50%);
+    opacity: 1; }

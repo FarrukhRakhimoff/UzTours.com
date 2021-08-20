@@ -11,7 +11,7 @@
     border: none;
     cursor: pointer;
   }
-  
+
   &--animated {
     animation: moveinbot 1s ease-out 0.75s;
     animation-fill-mode: backwards;
@@ -23,6 +23,13 @@
   }
   &--white::after {
     background-color: $color-white;
+  }
+  &--green{ 
+    color: $color-white;
+    background-color: $color-primary-dark;
+  }
+  &--green::after {
+    background-color: $color-primary-dark;
   }
   &:hover {
     transform: translateY(-0.3rem);
