@@ -255,12 +255,14 @@ h1 {
 
 /* line 21, sass/pages/_home.scss */
 .section-tours {
-  margin-top: 5rem; }
+  background-color: .section-tours color-grey-light-1;
+  margin-top: 5rem;
+  padding: 3rem 0 5rem 0; }
 
-/* line 24, sass/pages/_home.scss */
+/* line 26, sass/pages/_home.scss */
 .section-stories {
-  padding: 15rem 0;
-  background-color: #f7f7f7; }
+  position: relative;
+  padding: 10rem 0 20rem 0; }
 
 /* line 2, sass/components/_button.scss */
 .btn:link, .btn:visited {
@@ -533,7 +535,7 @@ h1 {
   width: 75%;
   margin: 0 auto;
   box-shadow: 1rem 3rem 6rem rgba(0, 0, 0, 0.3);
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
   padding: 6rem;
   font-size: 1.6rem;
@@ -546,7 +548,7 @@ h1 {
     width: 15rem;
     height: 15rem;
     float: left;
-    background-color: yellow;
+    background-color: white;
     -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
@@ -554,19 +556,58 @@ h1 {
     position: relative; }
   /* line 25, sass/components/_story.scss */
   .story__img {
-    height: 100%; }
+    height: 100%;
+    transform: translateX(-6rem) scale(1.4);
+    transition: all 0.5s;
+    backface-visibility: hidden; }
   /* line 31, sass/components/_story.scss */
+  .story__img--1 {
+    height: 100%;
+    transform: translateX(1rem) scale(1.4);
+    transition: all 0.5s;
+    backface-visibility: hidden; }
+  /* line 38, sass/components/_story.scss */
+  .story__text {
+    color: #777; }
+  /* line 41, sass/components/_story.scss */
   .story__caption {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 120%);
+    transform: translate(-50%, 20%);
     color: #fff;
     text-transform: uppercase;
     font-size: 1.7rem;
     text-align: center;
-    transition: all .2s; }
-  /* line 43, sass/components/_story.scss */
+    opacity: 0;
+    transition: all 0.2s; }
+  /* line 53, sass/components/_story.scss */
   .story:hover .story__caption {
     transform: translate(-50%, -50%);
-    opacity: 1; }
+    opacity: 1;
+    cursor: pointer; }
+  /* line 58, sass/components/_story.scss */
+  .story:hover .story__img {
+    transform: translateX(-6rem) scale(1);
+    filter: blur(3px) brightness(80%);
+    cursor: pointer; }
+  /* line 63, sass/components/_story.scss */
+  .story:hover .story__img--1 {
+    transform: scale(1);
+    filter: blur(3px) brightness(80%);
+    cursor: pointer; }
+
+/* line 1, sass/components/_bg-video.scss */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1; }
+  /* line 9, sass/components/_bg-video.scss */
+  .bg-video__content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .7; }
