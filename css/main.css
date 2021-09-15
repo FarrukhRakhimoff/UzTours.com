@@ -264,6 +264,24 @@ h1 {
   position: relative;
   padding: 10rem 0 20rem 0; }
 
+/* line 30, sass/pages/_home.scss */
+.section-book {
+  margin-top: -.5rem;
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+
+/* line 37, sass/pages/_home.scss */
+.book {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 50%, transparent 50%), url(../../images/phot_1.jpg);
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  height: 75rem; }
+  /* line 47, sass/pages/_home.scss */
+  .book__form {
+    width: 50%;
+    padding: 6rem; }
+
 /* line 2, sass/components/_button.scss */
 .btn:link, .btn:visited {
   text-decoration: none;
@@ -611,3 +629,43 @@ h1 {
     height: 100%;
     object-fit: cover;
     opacity: .7; }
+
+/* line 2, sass/components/_form.scss */
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+/* line 5, sass/components/_form.scss */
+.form__input {
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  border-radius: 3px;
+  border: none;
+  border-bottom: 3px solid transparent;
+  display: block;
+  width: 90%; }
+  /* line 13, sass/components/_form.scss */
+  .form__input:focus {
+    border-bottom: 3px solid #55c57a;
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); }
+    /* line 17, sass/components/_form.scss */
+    .form__input:focus:focus:invalid {
+      border-bottom: 3px solid #7ed56f; }
+  /* line 21, sass/components/_form.scss */
+  .form__input::-webkit-input-placeholder {
+    color: #999; }
+
+/* line 25, sass/components/_form.scss */
+.form__label {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #999;
+  margin-left: 2rem;
+  margin-top: .7rem;
+  display: block;
+  transition: all .3s; }
+
+/* line 34, sass/components/_form.scss */
+.form__input:placeholder-shown + .form__label {
+  visibility: hidden;
+  transform: translateY(-4rem); }
