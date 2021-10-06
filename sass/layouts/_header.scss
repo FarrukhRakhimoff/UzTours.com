@@ -13,6 +13,12 @@
 &__logo {
   width: 20rem;
   height: 21rem;
+  transition: all .5s;
+  &:hover,
+        &:active{
+            transform: translate(0) scale(.9);
+            transition: all .5s;
+        }
 }
 &__logo-box a img {
   width: 15rem;

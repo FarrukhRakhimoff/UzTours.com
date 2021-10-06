@@ -117,37 +117,42 @@ body {
   /* line 13, sass/layouts/_header.scss */
   .header__logo {
     width: 20rem;
-    height: 21rem; }
-  /* line 17, sass/layouts/_header.scss */
+    height: 21rem;
+    transition: all .5s; }
+    /* line 17, sass/layouts/_header.scss */
+    .header__logo:hover, .header__logo:active {
+      transform: translate(0) scale(0.9);
+      transition: all .5s; }
+  /* line 23, sass/layouts/_header.scss */
   .header__logo-box a img {
     width: 15rem;
     height: 16rem; }
-  /* line 21, sass/layouts/_header.scss */
+  /* line 27, sass/layouts/_header.scss */
   .header__logo-box {
     position: absolute;
     top: 4rem;
     left: 4rem; }
-  /* line 27, sass/layouts/_header.scss */
+  /* line 33, sass/layouts/_header.scss */
   .header__text-box {
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
-  /* line 34, sass/layouts/_header.scss */
+  /* line 40, sass/layouts/_header.scss */
   .header-primary {
     text-transform: uppercase;
     color: #fff; }
 
-/* line 40, sass/layouts/_header.scss */
+/* line 46, sass/layouts/_header.scss */
 header {
   display: block; }
 
-/* line 43, sass/layouts/_header.scss */
+/* line 49, sass/layouts/_header.scss */
 div {
   display: block; }
 
-/* line 46, sass/layouts/_header.scss */
+/* line 52, sass/layouts/_header.scss */
 h1 {
   display: block;
   font-size: 2em;
@@ -157,7 +162,7 @@ h1 {
   margin-inline-start: 0px;
   margin-inline-end: 0px; }
 
-/* line 56, sass/layouts/_header.scss */
+/* line 62, sass/layouts/_header.scss */
 ::selection {
   color: #fff;
   background-color: #55c57a; }
@@ -238,8 +243,60 @@ h1 {
 
 /* line 1, sass/layouts/_footer.scss */
 .footer {
-  background-color: #000;
-  padding: 10rem 0; }
+  background-color: #333;
+  padding: 10rem 0;
+  box-sizing: border-box;
+  font-size: 1.4rem; }
+  /* line 6, sass/layouts/_footer.scss */
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 5rem;
+    padding: 0 5rem; }
+  /* line 12, sass/layouts/_footer.scss */
+  .footer__logo {
+    width: 15rem;
+    height: auto;
+    transition: all .5s; }
+    /* line 16, sass/layouts/_footer.scss */
+    .footer__logo:hover, .footer__logo:active {
+      transform: translate(0) scale(0.9);
+      transition: all .5s; }
+  /* line 23, sass/layouts/_footer.scss */
+  .footer__navigation {
+    display: inline-block;
+    padding: 2rem;
+    border-top: 1px solid #777;
+    width: 100%; }
+  /* line 30, sass/layouts/_footer.scss */
+  .footer__list {
+    list-style-type: none; }
+  /* line 35, sass/layouts/_footer.scss */
+  .footer__item {
+    display: inline-block; }
+    /* line 37, sass/layouts/_footer.scss */
+    .footer__item:not(:last-child) {
+      margin-left: 1rem; }
+  /* line 43, sass/layouts/_footer.scss */
+  .footer__link {
+    text-transform: uppercase; }
+    /* line 45, sass/layouts/_footer.scss */
+    .footer__link:link, .footer__link:visited {
+      color: #f7f7f7;
+      display: inline-block;
+      text-decoration: none;
+      font-size: 1.8rem; }
+    /* line 52, sass/layouts/_footer.scss */
+    .footer__link:hover, .footer__link:active {
+      background-color: #333;
+      color: #55c57a;
+      transform: translateY(30%) rotate(5deg) scale(1.5);
+      transition: all .2s; }
+  /* line 61, sass/layouts/_footer.scss */
+  .footer__copyright {
+    color: #f7f7f7;
+    font-size: 1.8rem;
+    border-top: 1px solid #999;
+    width: 100%; }
 
 /* line 1, sass/pages/_home.scss */
 .section-about {
