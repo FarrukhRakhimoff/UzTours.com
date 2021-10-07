@@ -21,8 +21,6 @@
 
 /* line 1, sass/base/_base.scss */
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box; }
 
 /* line 6, sass/base/_base.scss */
@@ -298,6 +296,91 @@ h1 {
     border-top: 1px solid #999;
     width: 100%; }
 
+/* line 3, sass/layouts/_navigation.scss */
+.navigation__checkbox {
+  display: none; }
+
+/* line 6, sass/layouts/_navigation.scss */
+.navigation__button {
+  width: 7rem;
+  height: 7rem;
+  background-color: #fff;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  border-radius: 50%;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1); }
+
+/* line 18, sass/layouts/_navigation.scss */
+.navigation__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: radial-gradient(#7ed56f, #28b485);
+  z-index: 1000;
+  transition: all .8s; }
+
+/* line 29, sass/layouts/_navigation.scss */
+.navigation__nav {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  opacity: 0;
+  transition: opacity .8s; }
+
+/* line 40, sass/layouts/_navigation.scss */
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style-type: none;
+  text-align: center; }
+
+/* line 49, sass/layouts/_navigation.scss */
+.navigation__item {
+  margin: 1rem; }
+
+/* line 54, sass/layouts/_navigation.scss */
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 1rem 2rem;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-size: 224%;
+  transition: all .4s; }
+
+/* line 67, sass/layouts/_navigation.scss */
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  color: #55c57a;
+  transform: translateX(1rem); }
+
+/* line 73, sass/layouts/_navigation.scss */
+.navigation__link span {
+  margin-right: 1.5rem; }
+
+/* line 78, sass/layouts/_navigation.scss */
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(80);
+  /*checkbox ya'ni borib chetdagi menu ni bosganda checked holatiga o'tadi va scale ishga tushadi*/ }
+
+/* line 81, sass/layouts/_navigation.scss */
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%; }
+
 /* line 1, sass/pages/_home.scss */
 .section-about {
   background-color: #f7f7f7;
@@ -332,14 +415,14 @@ h1 {
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
 
-/* line 37, sass/pages/_home.scss */
+/* line 39, sass/pages/_home.scss */
 .book {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 50%, transparent 50%), url(../../images/phot_1.jpg);
   background-size: 100%;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  box-shadow: 8px 9px 10px 2px rgba(0, 0, 0, 0.68);
   height: 75rem; }
-  /* line 47, sass/pages/_home.scss */
+  /* line 49, sass/pages/_home.scss */
   .book__form {
     width: 50%;
     padding: 6rem; }
