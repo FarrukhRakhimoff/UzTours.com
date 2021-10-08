@@ -33,8 +33,8 @@
     background-image: linear-gradient(to right bottom,
     rgba($color-primary-light, 1),
     rgba($color-primary-dark, 1));
-    
-    
+    box-sizing: border-box;
+    width: 100%;
 }
 .book{
     background-image: linear-gradient(105deg,
@@ -45,7 +45,7 @@
     background-size: 100%;
     border-radius: 3px;
     box-shadow: 8px 9px 10px 2px rgba(0,0,0,0.68);
-    height: 75rem;
+    height: 60rem;
     &__form{
         width: 50%;
         padding: 6rem;

@@ -21,6 +21,8 @@
 
 /* line 1, sass/base/_base.scss */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box; }
 
 /* line 6, sass/base/_base.scss */
@@ -204,7 +206,7 @@ h1 {
 /*Section part*/
 /* line 40, sass/layouts/_grid.scss */
 .row {
-  width: 144rem;
+  width: 104rem;
   margin: 0 auto; }
   /* line 2, sass/abstracts/_mixins.scss */
   .row::after {
@@ -296,11 +298,11 @@ h1 {
     border-top: 1px solid #999;
     width: 100%; }
 
-/* line 3, sass/layouts/_navigation.scss */
+/* line 2, sass/layouts/_navigation.scss */
 .navigation__checkbox {
   display: none; }
 
-/* line 6, sass/layouts/_navigation.scss */
+/* line 5, sass/layouts/_navigation.scss */
 .navigation__button {
   width: 7rem;
   height: 7rem;
@@ -310,9 +312,11 @@ h1 {
   right: 6rem;
   border-radius: 50%;
   z-index: 2000;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer; }
 
-/* line 18, sass/layouts/_navigation.scss */
+/* line 19, sass/layouts/_navigation.scss */
 .navigation__background {
   height: 6rem;
   width: 6rem;
@@ -322,9 +326,9 @@ h1 {
   right: 6.5rem;
   background-image: radial-gradient(#7ed56f, #28b485);
   z-index: 1000;
-  transition: all .8s; }
+  transition: all 0.8s; }
 
-/* line 29, sass/layouts/_navigation.scss */
+/* line 33, sass/layouts/_navigation.scss */
 .navigation__nav {
   height: 100vh;
   width: 0;
@@ -333,9 +337,9 @@ h1 {
   left: 0;
   z-index: 1500;
   opacity: 0;
-  transition: opacity .8s; }
+  transition: opacity 0.8s; }
 
-/* line 40, sass/layouts/_navigation.scss */
+/* line 44, sass/layouts/_navigation.scss */
 .navigation__list {
   position: absolute;
   top: 50%;
@@ -344,11 +348,11 @@ h1 {
   list-style-type: none;
   text-align: center; }
 
-/* line 49, sass/layouts/_navigation.scss */
+/* line 53, sass/layouts/_navigation.scss */
 .navigation__item {
   margin: 1rem; }
 
-/* line 54, sass/layouts/_navigation.scss */
+/* line 58, sass/layouts/_navigation.scss */
 .navigation__link:link, .navigation__link:visited {
   display: inline-block;
   font-size: 3rem;
@@ -359,27 +363,72 @@ h1 {
   padding: 1rem 2rem;
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
   background-size: 224%;
-  transition: all .4s; }
+  transition: all 0.4s; }
 
-/* line 67, sass/layouts/_navigation.scss */
+/* line 76, sass/layouts/_navigation.scss */
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
   color: #55c57a;
   transform: translateX(1rem); }
 
-/* line 73, sass/layouts/_navigation.scss */
+/* line 82, sass/layouts/_navigation.scss */
 .navigation__link span {
   margin-right: 1.5rem; }
 
-/* line 78, sass/layouts/_navigation.scss */
+/* line 87, sass/layouts/_navigation.scss */
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(80);
   /*checkbox ya'ni borib chetdagi menu ni bosganda checked holatiga o'tadi va scale ishga tushadi*/ }
 
-/* line 81, sass/layouts/_navigation.scss */
+/* line 91, sass/layouts/_navigation.scss */
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
   width: 100%; }
+
+/* line 96, sass/layouts/_navigation.scss */
+.navigation__icon {
+  position: relative;
+  margin-top: 3.5rem; }
+  /* line 99, sass/layouts/_navigation.scss */
+  .navigation__icon, .navigation__icon::after, .navigation__icon::before {
+    height: 2px;
+    width: 3rem;
+    background-color: #333;
+    display: inline-block; }
+  /* line 108, sass/layouts/_navigation.scss */
+  .navigation__icon::before, .navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s; }
+  /* line 116, sass/layouts/_navigation.scss */
+  .navigation__icon::before {
+    top: -0.8rem; }
+  /* line 119, sass/layouts/_navigation.scss */
+  .navigation__icon::after {
+    top: +0.8rem; }
+
+/* line 123, sass/layouts/_navigation.scss */
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent; }
+
+/* line 126, sass/layouts/_navigation.scss */
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  transform: rotate(135deg); }
+
+/* line 130, sass/layouts/_navigation.scss */
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  transform: rotate(-135deg); }
+
+/* line 134, sass/layouts/_navigation.scss */
+.navigation__button:hover .navigation__icon::before {
+  top: -1rem; }
+
+/* line 137, sass/layouts/_navigation.scss */
+.navigation__button:hover .navigation__icon::after {
+  top: 1rem; }
 
 /* line 1, sass/pages/_home.scss */
 .section-about {
@@ -413,7 +462,9 @@ h1 {
 .section-book {
   margin-top: -.5rem;
   padding: 15rem 0;
-  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+  box-sizing: border-box;
+  width: 100%; }
 
 /* line 39, sass/pages/_home.scss */
 .book {
@@ -421,7 +472,7 @@ h1 {
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 8px 9px 10px 2px rgba(0, 0, 0, 0.68);
-  height: 75rem; }
+  height: 60rem; }
   /* line 49, sass/pages/_home.scss */
   .book__form {
     width: 50%;
@@ -860,6 +911,6 @@ h1 {
   line-height: 1.7;
   color: #777; }
 
-/* line 86, sass/components/_form.scss */
+/* line 87, sass/components/_form.scss */
 .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
   opacity: 1; }
