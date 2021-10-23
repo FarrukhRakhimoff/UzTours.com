@@ -1,6 +1,5 @@
 .composition {
     position: relative;
-
     &__photo {
         width: 55%;
         border-radius: 5px;
@@ -9,20 +8,57 @@
         z-index: 10;
         outline-offset: 1rem;
         transition: all .2s;
+       
+        @include respond(big-desktop){
+            width: 55%;
+        }
+        @include respond(tab-land){
+            width: 50%;
+        }
+        @include respond(tab-port){
+            width: 50%;
+        }
+        @include respond(phone){
+          width: 50%;
+        }
 
         &--p1 {
             left: 0;
             top: -2rem;
+            @include respond(tab-port){
+               left: 0;
+                top: 0;
+              } 
+              @include respond(phone){
+                left: 2rem;
+                top: 0;
+              }
         }
 
         &--p2 {
             right: 0;
             top: 2rem;
+            @include respond(tab-port){
+                left: 8rem;
+                top: 4rem;
+               } 
+            @include respond(phone){
+                left: 10rem;
+                top: 4rem;
+              }
         }
 
         &--p3 {
             left: 20%;
             top: 10rem;
+            @include respond(tab-port){
+                left: 16rem;
+                top: 10rem;
+               } 
+            @include respond(phone){
+                left: 18rem;
+                top: 10rem;
+              }
         }
 
         &:hover {
@@ -36,5 +72,5 @@
     &:hover &__photo:not(:hover) {
         transform: scale(.95);
     }
-    //cosmoposition:hover cosmopostion__photo:not(:hover)  qachonki borib hover qilganimizda, hover qilinmagan qolgan ikkitasini ustida amal bajaradi ya'ni bu yerda orqaga biroz suradi "kirgazadi"
+    // cosmoposition:hover cosmopostion__photo:not(:hover)  qachonki borib hover qilganimizda, hover qilinmagan qolgan ikkitasini ustida amal bajaradi ya'ni bu yerda orqaga biroz suradi "kirgazadi"
 }
